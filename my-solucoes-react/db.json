@@ -1,0 +1,12 @@
+{
+  "about": {
+    "title": "SOBRE NÓS",
+    "subtitle": "Especialistas em Programação de CLP e Automação Industrial",
+    "paragraphs": [
+      "Na M.Y. Soluções, somos pioneiros na implementação de soluções de automação industrial, com foco em programação de Controladores Lógicos Programáveis (CLP). Nossa equipe de engenheiros e técnicos altamente qualificados possui vasta experiência na otimização de processos industriais, desde a concepção do projeto até a implementação e comissionamento.",
+      "Oferecemos uma gama completa de serviços, incluindo a programação de CLPs das principais marcas do mercado, desenvolvimento de sistemas de supervisão (SCADA), integração de redes industriais e robótica. Nosso objetivo é fornecer soluções que aumentem a eficiência, reduzam custos operacionais e melhorem a segurança no ambiente de trabalho.",
+      "Seja para a modernização de uma planta existente ou para a automação de um novo processo, a M.Y. Soluções tem o conhecimento e a experiência para entregar um projeto de sucesso."
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1932&auto=format&fit=crop"
+  }
+}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from './Admin.module.css'; // Import styles
 
 interface User {
     id: number;
@@ -21,31 +22,31 @@ const UserManagement: React.FC = () => {
         <div>
             <h2>Gerenciamento de Usuários</h2>
             
-            <div className="card">
+            <div className={styles.card}> {/* Apply card style */}
                 <h3>Adicionar Novo Usuário</h3>
-                <form className="user-form">
-                    <div className="form-group">
+                <form className={styles['user-form']}> {/* Apply form style if exists, or create one */}
+                    <div className={styles['form-group']}>
                         <label htmlFor="name">Nome</label>
                         <input type="text" id="name" name="name" />
                     </div>
-                    <div className="form-group">
+                    <div className={styles['form-group']}>
                         <label htmlFor="email">Email</label>
                         <input type="email" id="email" name="email" />
                     </div>
-                    <div className="form-group">
+                    <div className={styles['form-group']}>
                         <label htmlFor="role">Função</label>
                         <select id="role" name="role">
                             <option value="User">Usuário</option>
                             <option value="Admin">Administrador</option>
                         </select>
                     </div>
-                    <button type="submit" className="btn-primary">Adicionar Usuário</button>
+                    <button type="submit" className={styles['btn-primary']}>Adicionar Usuário</button>
                 </form>
             </div>
 
-            <div className="card">
+            <div className={styles.card}> {/* Apply card style */}
                 <h3>Usuários Existentes</h3>
-                <table className="users-table">
+                <table className={styles['users-table']}> {/* Apply table style */}
                     <thead>
                         <tr>
                             <th>Nome</th>
@@ -61,7 +62,7 @@ const UserManagement: React.FC = () => {
                                 <td>{user.email}</td>
                                 <td>{user.role}</td>
                                 <td>
-                                    <button onClick={() => handleRemoveUser(user.id)} className="btn-danger">Remover</button>
+                                    <button onClick={() => handleRemoveUser(user.id)} className={styles['btn-danger']}>Remover</button>
                                 </td>
                             </tr>
                         ))}

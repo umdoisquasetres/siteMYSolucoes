@@ -1,35 +1,36 @@
 import React from 'react';
+import styles from './Admin.module.css'; // Import styles
 
 const Nfse: React.FC = () => {
     return (
         <div>
             <h2>Emissão de NFS-e</h2>
             
-            <div className="card">
+            <div className={styles.card}> {/* Apply card style */}
                 <h3>Gerar Nova Nota Fiscal de Serviço Eletrônica</h3>
-                <form className="nfse-form">
-                    <div className="form-group">
+                <form className={styles['nfse-form']}> {/* Apply form style if exists, or create one */}
+                    <div className={styles['form-group']}>
                         <label htmlFor="customer">Cliente</label>
                         <select id="customer" name="customer">
                             <option>Selecione um cliente</option>
                             {/* Popular com clientes cadastrados */}
                         </select>
                     </div>
-                    <div className="form-group">
+                    <div className={styles['form-group']}>
                         <label htmlFor="service">Serviço Prestado</label>
                         <textarea id="service" name="service" rows={5}></textarea>
                     </div>
-                    <div className="form-group">
+                    <div className={styles['form-group']}>
                         <label htmlFor="value">Valor</label>
                         <input type="number" id="value" name="value" />
                     </div>
-                    <button type="submit" className="btn-primary">Emitir NFS-e</button>
+                    <button type="submit" className={styles['btn-primary']}>Emitir NFS-e</button>
                 </form>
             </div>
 
-            <div className="card">
+            <div className={styles.card}> {/* Apply card style */}
                 <h3>Histórico de Emissões</h3>
-                <table className="emissions-table">
+                <table className={styles['emissions-table']}> {/* Apply table style */}
                     <thead>
                         <tr>
                             <th>Cliente</th>

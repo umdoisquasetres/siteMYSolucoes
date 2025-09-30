@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import './Admin.css';
+// import './Admin.css';
 
 const Admin: React.FC = () => {
     return (
