@@ -25,9 +25,9 @@ const Header: React.FC = () => {
     };
 
     const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-        e.preventDefault();
         const targetId = e.currentTarget.getAttribute('href');
-        if (targetId) {
+        if (targetId && targetId.startsWith('#')) {
+            e.preventDefault();
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 targetElement.scrollIntoView({
